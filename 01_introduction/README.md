@@ -14,7 +14,7 @@ Selamat Datang di pemograman Python dasar. Di sini kita akan memberikan penjelas
   * [Daftar Isi](#1)
   * [Gambaran Singkat](#2)
   * [Instalasi Python](#3)
-  * [COntoh Hello World](#4)
+  * [Contoh Hello World](#4)
 
 
 <a id="2"> <h2>Gambaran Umum</h2> </a>
