@@ -92,7 +92,8 @@ Proses instalasi ini cukup dilakukan satu kali. Ikuti panduan yang sesuai dengan
 3.  **Centang "Add Python to PATH" (SANGAT PENTING!)**
     Di bagian bawah jendela instalasi, ada sebuah kotak centang bertuliskan **"Add Python.exe to PATH"**. **PASTIKAN Anda mencentang kotak ini.** Langkah ini akan sangat mempermudah kita saat menjalankan Python dari terminal nanti.
 
-    <img src="https://docs.python.org/3/using/images/win-install-launcher.png" alt="Centang Add to PATH" width="600"/>
+    <img width="706" height="449" alt="Centang Add to PATH" src="https://github.com/user-attachments/assets/d8e73494-d9ea-4098-87d2-6e5dce12eec3" />
+
 
 4.  **Pilih "Install Now"**
     Klik pada **"Install Now"**. Proses instalasi akan berjalan. Setelah beberapa saat, instalasi akan selesai.
