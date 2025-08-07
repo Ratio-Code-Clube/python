@@ -12,7 +12,14 @@
 * [Variabel](#variabel)
   * [Apa itu Variabel](#2)
 * [Tipe Data](#tipedata)
-  * [Mengenal Tipe Data](#3)
+  * [String](#3)
+  * [Integer](#4)
+  * [Float](#5)
+  * [Boolean](#6)
+  * [List](#7)
+  * [Tuple](#8)
+  * [Set](#9)
+  * [Dictionary](#10)
 
 ---
 
@@ -41,7 +48,7 @@ print(nama)
 
 Struktur pembuatan variabel sangat sederhana: `nama_variabel = nilai`.
 
-  * **nama\_variabel**: Label yang Anda berikan (contoh: `nama`).
+  * **nama _variabel**: Label yang Anda berikan (contoh: `nama`).
   * **=**: Operator "assignment", artinya "masukkan nilai ini ke dalam variabel".
   * **nilai**: Informasi yang Anda simpan (contoh: `"Budi"`).
 
@@ -83,7 +90,7 @@ tinggi_badan = 175.5
 harga_produk = 4999.99
 ```
 
-<a id="5"> <h3>4. Boolean (`bool`)</h3> </a>
+<a id="6"> <h3>4. Boolean (`bool`)</h3> </a>
 
 Ini adalah tipe data spesial yang hanya memiliki dua nilai: **`True`** (Benar) atau **`False`** (Salah). Ibarat sakelar lampu: ON atau OFF. Sangat berguna untuk merepresentasikan sebuah kondisi.
 
@@ -131,6 +138,155 @@ print(type(x))  # Output: <class 'str'>
 print(type(y))  # Output: <class 'int'>
 ```
 
-Luar biasa\! Anda sekarang tahu cara menyimpan informasi (dengan variabel) dan jenis-jenis informasi dasar (tipe data) dalam Python. Di materi selanjutnya, kita akan belajar bagaimana cara **mengolah** data-data ini\!
+Luar biasa ! Anda sekarang tahu cara menyimpan informasi (dengan variabel) dan jenis-jenis informasi dasar (tipe data) dalam Python. Di materi selanjutnya, kita akan belajar bagaimana cara **mengolah** data-data ini !
+
+<br>
+<br>
+
+
+<a id="tipedatakoleksi"><h2>Tipe Data Koleksi: List, Tuple, Set, & Dictionary</h2></a>
+
+
+
+Sejauh ini, kita telah menyimpan satu informasi dalam satu variabel, misalnya `umur = 25`. Namun, bagaimana jika kita ingin menyimpan daftar nama siswa dalam satu variabel? Atau daftar belanjaan?
+
+Untuk kebutuhan ini, Python menyediakan **tipe data koleksi**. Anggap saja ini seperti "wadah super" yang bisa menampung banyak "wadah" (variabel) di dalamnya. Mari kita kenali empat jenis utamanya.
+
+
+
+<a id="7"> <h3>1. List (`[]`)</h3> </a>
+
+
+
+
+**Analogi:** Anggap **List** seperti **daftar belanjaan**. Anda bisa menambah barang baru, mencoret barang yang sudah dibeli, atau bahkan mengubah urutannya.
+
+**Karakteristik Utama:**
+* **Terurut (_Ordered_):** Urutan data penting dan tidak akan berubah.
+* **Dapat Diubah (_Mutable_):** Anda bisa menambah, menghapus, atau mengubah isinya setelah dibuat.
+* **Mengizinkan Duplikat:** Anda bisa memiliki beberapa data yang sama persis di dalamnya.
+* **Sintaks:** Dibuat menggunakan kurung siku `[]`.
+
+
+```python
+# Contoh sebuah list nama buah
+daftar_buah = ["apel", "jeruk", "mangga", "apel"]
+
+print(daftar_buah)
+
+# Mengubah data di list
+daftar_buah[1] = "anggur" # Mengganti "jeruk" dengan "anggur"
+print(daftar_buah)
+````
+
+Output:
+
+```
+['apel', 'jeruk', 'mangga', 'apel']
+['apel', 'anggur', 'mangga', 'apel']
+```
+
+<a id="8"> <h3>2. Tuple (`()`)</h3> </a>
+
+
+
+**Analogi:** Anggap **Tuple** seperti **daftar tanggal lahir** pada dokumen resmi. Sekali ditulis, data tersebut tidak seharusnya diubah lagi untuk menjaga integritasnya.
+
+**Karakteristik Utama:**
+
+  * **Terurut (*Ordered*):** Sama seperti List, urutannya tetap.
+  * **Tidak Dapat Diubah (*Immutable*):** Isinya **tidak bisa** diubah setelah dibuat. Ini adalah perbedaan utamanya dengan List.
+  * **Mengizinkan Duplikat:** Sama seperti List.
+  * **Sintaks:** Dibuat menggunakan kurung biasa `()`.
+
+ 
+
+```python
+# Contoh tuple untuk koordinat geografis
+koordinat_gps = (34.0522, -118.2437)
+
+print(koordinat_gps)
+
+# Baris di bawah ini akan menyebabkan error karena tuple tidak bisa diubah!
+# koordinat_gps[0] = 10
+```
+
+<a id="9"> <h3>3. Set (`{}`)</h3> </a>
+
+ 
+
+**Analogi:** Anggap **Set** seperti **kumpulan email unik** untuk undangan. Anda tidak ingin ada email yang sama terdaftar dua kali, dan urutan emailnya pun tidak penting.
+
+**Karakteristik Utama:**
+
+  * **Tidak Terurut (*Unordered*):** Urutan datanya tidak dijamin sama setiap saat.
+  * **Dapat Diubah (*Mutable*):** Anda bisa menambah atau menghapus data, tetapi tidak bisa mengubah data yang sudah ada.
+  * **Tidak Mengizinkan Duplikat:** Semua data di dalamnya dijamin unik.
+  * **Sintaks:** Dibuat menggunakan kurung kurawal `{}`.
+
+ 
+
+```python
+# Contoh set hobi
+hobi_unik = {"membaca", "bersepeda", "memasak", "membaca"}
+
+print(hobi_unik)
+```
+
+Output (urutan bisa berbeda):
+
+```
+{'bersepeda', 'memasak', 'membaca'}
+```
+
+Perhatikan, "membaca" yang duplikat otomatis dihilangkan.
+
+<a id="10"> <h3>4. Dictionary (`{}`)</h3> </a>
+
+
+
+
+**Analogi:** Anggap **Dictionary** persis seperti **kamus** atau **kontak telepon**. Setiap data disimpan dalam format **pasangan kunci-nilai (`key-value`)**. Anda mencari "kata" (kunci) untuk menemukan "artinya" (nilai).
+
+**Karakteristik Utama:**
+
+  * **Pasangan Kunci-Nilai:** Setiap data terdiri dari `kunci` yang unik dan `nilai`-nya.
+  * **Dapat Diubah (*Mutable*):** Anda bisa menambah, menghapus, atau mengubah pasangan kunci-nilai.
+  * **Kunci Harus Unik:** Tidak boleh ada kunci yang sama.
+  * **Sintaks:** Dibuat menggunakan kurung kurawal `{}` dengan format `{'kunci': 'nilai'}`.
+
+ 
+
+```python
+# Contoh dictionary untuk biodata
+biodata_mahasiswa = {
+    "nama": "Ghozi Waridi",
+    "nim": "123456",
+    "ipk": 3.87,
+    "aktif": True
+}
+
+# Mengakses data menggunakan kuncinya
+print("Nama Mahasiswa:", biodata_mahasiswa["nama"])
+print("IPK:", biodata_mahasiswa["ipk"])
+```
+
+Output:
+
+```
+Nama Mahasiswa: Ghozi Waridi
+IPK: 3.87
+```
+
+-----
+
+
+ 
+
 
 </div>
+
+
+
+
+
