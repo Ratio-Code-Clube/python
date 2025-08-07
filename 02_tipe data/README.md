@@ -1,6 +1,6 @@
 <div align="center">
 
-# Variabel dan Tipe Data: "Kotak" Penyimpan Informasi 📦  
+# Variabel dan Tipe Data
   
 </div>
 
