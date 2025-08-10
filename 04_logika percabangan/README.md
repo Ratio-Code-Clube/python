@@ -9,19 +9,20 @@
 <a id="1"><h2>Daftar Isi</h2></a>
 * [Daftar Isi](#1)
 * [Pendahuluan](#pendahuluan)
-* [Operator Aritmatika](#2)
-* [Operator Penugasan](#3)
-* [Operator Perbandingan](#4)
-* [Operator Logika](#5)
+* [Pernyataan if )](#2)
+* [Pernyataan else](#3)
+* [Pernyataan elif](#4)
 
 
+<a id="pendahuluan"><h2>Pendahuluan</h2></a>
 Sejauh ini, program kita berjalan lurus dari atas ke bawah. Tapi, bagaimana jika kita ingin program bisa membuat keputusan dan mengambil "jalan" yang berbeda tergantung pada kondisi tertentu?
 
 Misalnya, jika di luar hujan, kita bawa payung. Jika tidak, kita tidak perlu bawa. Kemampuan untuk membuat keputusan seperti inilah yang disebut **percabangan** atau **kontrol alur (_control flow_)**. Di Python, kita menggunakan `if`, `elif`, dan `else` untuk melakukannya.
 
 
-
-<a id="2"><a>Pernyataan `if` (Jika...) 🤔</h2></a>
+<br>
+<br>
+<a id="2"><h2>Pernyataan `if` (Jika...) 🤔</h2></a>
 
 
 Pernyataan `if` adalah yang paling dasar. Pernyataan ini digunakan untuk menjalankan sebuah blok kode **hanya jika** sebuah kondisi bernilai `True`.
@@ -46,7 +47,9 @@ print("Terima kasih telah berkunjung.") # Baris ini akan selalu dijalankan
 
 Karena `umur` (22) lebih besar dari 17, maka kondisi `umur >= 17` bernilai `True`, dan pesan "Anda boleh masuk..." akan ditampilkan.
 
-### 2 . Pernyataan `else` (Jika Tidak...) 🤷
+<br>
+<br>
+<a id="3"><h2>Pernyataan `else` (Jika Tidak...) 🤷 </h2></a>
 
  
 Bagaimana jika kondisi `if` tidak terpenuhi (bernilai `False`)? Di sinilah `else` berperan. Blok kode di dalam `else` akan dijalankan sebagai alternatif jika kondisi `if` gagal.
@@ -64,7 +67,9 @@ else:
 
 Dalam contoh ini, karena `umur` (15) tidak memenuhi kondisi `umur >= 17`, program akan "melompat" dan menjalankan blok kode di dalam `else`.
 
-### 3 . Pernyataan `elif` (Jika Tidak, Coba Kondisi Lain...) 🧐
+<br>
+<br>
+<a id="4"><h2>Pernyataan `elif` (Jika Tidak, Coba Kondisi Lain...) 🧐</h2></a>
 
  
 `elif` adalah kependekan dari *else if*. Digunakan ketika kita memiliki lebih dari dua kemungkinan atau "cabang jalan". `elif` memungkinkan kita untuk memeriksa beberapa kondisi secara berurutan.
@@ -114,5 +119,5 @@ Luar biasa ! Anda sekarang bisa membuat program yang lebih "pintar" dan dinamis.
 
 Di materi selanjutnya, kita akan membahas konsep fundamental lainnya: **perulangan (*looping*)**, yang memungkinkan kita menjalankan blok kode yang sama berulang kali secara otomatis.
 
- 
+</div>
 
