@@ -1,21 +1,33 @@
 
-<a id="9"><h2>Perulangan (Looping) pada Python</h2></a>
+<div align="center">
+  
+  # Perulangan (Looping) pada Python
+  
+</div>
 
 <div align="justify">
 
+
+<a id="1"><h2>Daftar Isi</h2></a>
+* [Daftar Isi](#1)
+* [Pendahuluan](#pendahuluan)
+* [Perulangan For](#2)
+* [Perulangan While](#3)
+
+
+<a id="pendahuluan"><h2>Pendahuluan</h2></a>
 Bayangkan Anda harus menulis "Selamat Pagi!" sebanyak seratus kali. Tentu akan sangat melelahkan jika ditulis satu per satu. Dalam pemrograman, ada cara yang jauh lebih efisien untuk melakukan tugas berulang seperti ini, yaitu dengan menggunakan **perulangan** atau **_loop_**.
 
 Perulangan memungkinkan kita untuk menjalankan satu blok kode yang sama berulang kali, baik untuk jumlah tertentu maupun selama sebuah kondisi terpenuhi. Di Python, ada dua jenis perulangan utama: `for` dan `while`.
 
-</div>
 
-### 1. Perulangan `for` 🚶‍♀️
+<a id="2"><h2>Perulangan `for` 🚶‍♀️</h2></a>
 
-<div align="justify">
+
 Perulangan `for` digunakan ketika kita ingin mengulang sebuah blok kode untuk setiap item dalam sebuah urutan (seperti _List_, _Tuple_, atau _String_). Ini adalah jenis perulangan yang paling umum digunakan di Python.
 
 **Analogi:** Anggap Anda memiliki sebuah daftar belanjaan (_List_). Anda akan mengambil setiap barang satu per satu dari daftar tersebut sampai semua barang terambil.
-</div>
+
 
 ```python
 # Contoh: Menampilkan setiap buah dalam sebuah list
@@ -33,9 +45,8 @@ for buah in daftar_buah:
 
 #### Menggunakan `range()`
 
- <div align="justify" >
 Jika kita ingin mengulang untuk jumlah tertentu, kita bisa menggunakan fungsi `range()`.
- </div >
+
 
 ```python
 # Contoh: Perulangan dari 0 hingga 4
@@ -43,14 +54,12 @@ for i in range(5):
   print("Perulangan ke-", i)
 ```
 
-### 2 . Perulangan `while` 🏃‍♂️
+<a id="3"><h2>Perulangan `while` 🏃‍♂️ </h2></a>
 
- <div align="justify" >
 Perulangan `while` digunakan untuk menjalankan sebuah blok kode **selama** sebuah kondisi bernilai `True`.
 
 **Analogi:** Anggap Anda sedang berlari di *treadmill*. Anda akan terus berlari **selama** tombol "start" masih menyala. Begitu tombolnya "off" (kondisi menjadi `False`), Anda berhenti.
 
- </div >
 
 ```python
 # Contoh: Hitung mundur dari 5
@@ -105,7 +114,6 @@ Outputnya hanya akan mencetak `0, 2, 4, 6, 8`.
 
 -----
 
- <div align="justify" >
 Dengan percabangan dan perulangan, Anda kini memiliki dua alat paling kuat dalam pemrograman. Anda bisa membuat program yang tidak hanya membuat keputusan, tetapi juga melakukan tugas-tugas berulang secara efisien.
 
 Selanjutnya, kita akan belajar tentang **fungsi**, cara untuk mengelompokkan kode kita menjadi blok yang bisa digunakan kembali.
