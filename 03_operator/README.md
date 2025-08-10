@@ -1,19 +1,36 @@
 
-<a id="7"><h2>Operator pada Python</h2></a>
+<div align="center">
+ 
+ # Operator pada Python
+ 
+</div>
 
 <div align="justify">
+
+<a id="1"><h2>Daftar Isi</h2></a>
+* [Daftar Isi](#1)
+* [Pendahuluan](#pendahuluan)
+* [Operator Aritmatika](#2)
+* [Operator Penugasan](#3)
+* [Operator Perbandingan](#4)
+* [Operator Logika](#5)
+
+
+---
+<a id="pendahuluan"><h2> Pendahuluan </h2></a>
 
 Setelah kita tahu cara menyimpan data dalam berbagai jenis variabel, sekarang saatnya kita belajar cara **mengolah** data tersebut. Untuk melakukannya, kita menggunakan **operator**.
 
 Operator adalah simbol-simbol khusus yang digunakan untuk melakukan berbagai jenis operasi, seperti perhitungan matematika, perbandingan antara dua nilai, atau menggabungkan kondisi logika.
 
-</div>
+<br>
+<br>
 
-### 1. Operator Aritmatika 🧮
+<a id="2"><h2>Operator Aritmatika 🧮</h2></a> 
 
-<div align="justify">
+
 Ini adalah operator yang paling umum, digunakan untuk melakukan operasi matematika dasar.
-</div>
+
 
 | Operator | Nama                 | Contoh      | Hasil | Keterangan                                     |
 |:--------:|:---------------------|:------------|:-----:|:-----------------------------------------------|
@@ -33,12 +50,13 @@ print("Penjumlahan:", x + y)
 print("Sisa Bagi:", x % y)
 print("Pangkat:", x ** y)
 ````
+<br>
+<br>
+<a id="3"> <h2>Operator Penugasan (Assignment) 📥 </h2> </a>
 
-### 2 . Operator Penugasan (*Assignment*) 📥
-
- <div align="justify" >
+ 
 Operator ini digunakan untuk "menugaskan" atau memberikan nilai kepada sebuah variabel.
- </div >
+ 
 
 | Operator | Contoh        | Ekuivalen dengan | Keterangan                                         |
 |:--------:|:--------------|:-----------------|:---------------------------------------------------|
@@ -57,12 +75,13 @@ print("Umur awal:", umur)
 umur += 5 # Ini sama dengan umur = umur + 5
 print("Umur sekarang:", umur)
 ```
+<br>
+<br>
+<a id="4"><h2>Operator Perbandingan ⚖️</h2></a>
 
-### 3 . Operator Perbandingan ⚖️
-
- <div align="justify" >
+ 
 Operator ini digunakan untuk membandingkan dua nilai. Hasil dari operasi ini **selalu** berupa nilai Boolean (`True` atau `False`).
- </div >
+
 
 | Operator | Nama                  | Contoh       | Hasil   |
 |:--------:|:----------------------|:-------------|:--------|
@@ -84,12 +103,13 @@ lulus = nilai_ujian >= 75 # Apakah nilai ujian lebih besar atau sama dengan 75?
 
 print("Apakah siswa lulus?", lulus)
 ```
+<br>
+<br>
+<a id="5"><h2>Operator Logika 🧠 </h2></a>
 
-### 4 . Operator Logika 🧠
-
- <div align="justify" >
+ 
 Operator ini digunakan untuk menggabungkan beberapa kondisi (nilai Boolean) menjadi satu.
- </div >
+
 
 | Operator | Keterangan                                             | Contoh                             | Hasil   |
 |:--------:|:-------------------------------------------------------|:-----------------------------------|:--------|
@@ -110,6 +130,6 @@ print("Boleh buat SIM?", boleh_buat_sim)
 
 -----
 
- <div align="justify" >
+ 
 Memahami operator adalah kunci untuk mulai menulis program yang dinamis dan bisa membuat keputusan. Di materi selanjutnya, kita akan menggunakan operator perbandingan dan logika ini untuk mengontrol alur program kita dengan **percabangan (if, else)**.
  </div >
