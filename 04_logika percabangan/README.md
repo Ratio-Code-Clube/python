@@ -1,17 +1,29 @@
 
-<a id="8"><h2>Logika Percabangan (If, Elif, Else)</h2></a>
+<div align="center">
+  
+# Logika Percabangan (If, Elif, Else)
 
+</div>
 <div align="justify">
+
+<a id="1"><h2>Daftar Isi</h2></a>
+* [Daftar Isi](#1)
+* [Pendahuluan](#pendahuluan)
+* [Operator Aritmatika](#2)
+* [Operator Penugasan](#3)
+* [Operator Perbandingan](#4)
+* [Operator Logika](#5)
+
 
 Sejauh ini, program kita berjalan lurus dari atas ke bawah. Tapi, bagaimana jika kita ingin program bisa membuat keputusan dan mengambil "jalan" yang berbeda tergantung pada kondisi tertentu?
 
 Misalnya, jika di luar hujan, kita bawa payung. Jika tidak, kita tidak perlu bawa. Kemampuan untuk membuat keputusan seperti inilah yang disebut **percabangan** atau **kontrol alur (_control flow_)**. Di Python, kita menggunakan `if`, `elif`, dan `else` untuk melakukannya.
 
-</div>
 
-### 1. Pernyataan `if` (Jika...) 🤔
 
-<div align="justify">
+<a id="2"><a>Pernyataan `if` (Jika...) 🤔</h2></a>
+
+
 Pernyataan `if` adalah yang paling dasar. Pernyataan ini digunakan untuk menjalankan sebuah blok kode **hanya jika** sebuah kondisi bernilai `True`.
 
 **Anatomi:**
@@ -20,7 +32,7 @@ Pernyataan `if` adalah yang paling dasar. Pernyataan ini digunakan untuk menjala
 `....# Blok kode ini dijalankan jika kondisi True`
 <br>
 `....# Perhatikan indentasi (spasi menjorok ke dalam)`
-</div>
+
 
 ```python
 # Contoh: Cek apakah seseorang boleh menonton film rating dewasa
@@ -36,9 +48,9 @@ Karena `umur` (22) lebih besar dari 17, maka kondisi `umur >= 17` bernilai `True
 
 ### 2 . Pernyataan `else` (Jika Tidak...) 🤷
 
- <div align="justify" >
+ 
 Bagaimana jika kondisi `if` tidak terpenuhi (bernilai `False`)? Di sinilah `else` berperan. Blok kode di dalam `else` akan dijalankan sebagai alternatif jika kondisi `if` gagal.
- </div >
+ 
 
 ```python
 # Melanjutkan contoh sebelumnya
@@ -54,9 +66,9 @@ Dalam contoh ini, karena `umur` (15) tidak memenuhi kondisi `umur >= 17`, progra
 
 ### 3 . Pernyataan `elif` (Jika Tidak, Coba Kondisi Lain...) 🧐
 
- <div align="justify" >
+ 
 `elif` adalah kependekan dari *else if*. Digunakan ketika kita memiliki lebih dari dua kemungkinan atau "cabang jalan". `elif` memungkinkan kita untuk memeriksa beberapa kondisi secara berurutan.
- </div >
+ 
 
 ```python
 # Contoh: Konversi nilai angka menjadi nilai huruf
@@ -97,10 +109,10 @@ else:
 
 -----
 
- <div align="justify" >
+
 Luar biasa ! Anda sekarang bisa membuat program yang lebih "pintar" dan dinamis. Kemampuan untuk mengontrol alur program adalah keterampilan inti seorang programmer.
 
 Di materi selanjutnya, kita akan membahas konsep fundamental lainnya: **perulangan (*looping*)**, yang memungkinkan kita menjalankan blok kode yang sama berulang kali secara otomatis.
 
- </div >
+ 
 
